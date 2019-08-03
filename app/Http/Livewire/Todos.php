@@ -46,7 +46,6 @@ class Todos extends Component
 
     public function updateTodo($id, $title)
     {
-        dd($title);
         $todo = Todo::find($id);
         $todo->title = $title;
         $todo->save();

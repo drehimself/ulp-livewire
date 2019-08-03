@@ -19,7 +19,7 @@
                     href="#"
                     class="{{ $todo->completed ? 'completed' : ''}}"
                     onclick="updateTodoPrompt('{{$todo->title}}') || event.stopImmediatePropagation()"
-                    wire:click="updateTodo({{$todo->id}}, 'todoUpdated')"
+                    wire:click="updateTodo({{$todo->id}}, todoUpdated)"
                 >
                     {{ $todo->title }}
                 </a>
